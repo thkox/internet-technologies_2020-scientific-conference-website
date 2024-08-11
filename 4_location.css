@@ -1,0 +1,51 @@
+.info {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1.location {
+	text-shadow: 3px 3px 6px red; /* x, y, blur εφέ, και χρώμα */
+}
+
+h3 {
+	color: white;
+	text-align: center;
+	font-size: 180%;
+	font-family: Comic Sans MS;
+}
+
+h4 {
+	color: white;
+	text-align: left;
+	font-size: 120%;
+	font-family: Comic Sans MS;
+}
+
+.city {
+	width: 80%;
+	border-radius: 20px;
+}
+figure{
+	text-align: center;
+}
+
+b {
+	color: #7cde1b;
+}
+
+hr {
+	width: 50%;
+	height: 7px;
+	background-color: #61d491;
+	border-radius: 20px;
+}
+
+p.category {
+	color: #7cdebc;
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
+}

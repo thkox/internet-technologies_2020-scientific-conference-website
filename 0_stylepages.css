@@ -1,0 +1,100 @@
+body{
+	background-color: #3399ff; /* Σε περίπτωση που δεν φορτωθεί η φωτογραφία */
+	background-image: url('0.2_background.jpg'); /*τοποθεσία φωτογραφίας*/
+	background-repeat: no-repeat; /* Για να μην επαναλαμβάνεται */
+	background-attachment: fixed; /* να διατηρεί τα αρχικό aspect ratio χωρίς αλλοιώσεις */
+	background-size: cover; /* να καταλαμβάνει όλη την σελίδα */
+	margin: 30px; /* περιθώριο σελίδας */
+}
+
+img.logomenu{
+	width:50px;
+	border-radius: 20px;
+	float: left;
+	margin-left: 0px;
+	margin-right: auto;
+	padding:10px;
+}
+
+img.flag{
+	width: 25px;
+	margin-left: auto;
+	margin-right: 0px;
+	padding:10px;
+}
+
+figure{
+	color:white;
+	font-family: Bahnschrift;
+}
+
+h1{
+	color: white;
+	text-align: center;
+	font-size: 300%;
+	font-family: Monotype Corsiva;
+}
+
+h1.title{
+	text-shadow: 2px 2px 5px cyan; /* x, y, blur εφέ, και χρώμα */
+}
+
+
+
+.navbar { /*εμφάνιση μπάρας μενού */
+	width: 100%;
+	background-color: #0b2735;
+	overflow: auto;
+	border-radius: 20px;
+}
+
+.topnav-right { /* εμφάνιση μενού-δεξιά */
+	float: right;
+	text-align: right;
+}
+
+
+.navbar a { /*παρεμετροποίηση "κουμπιών" */
+	float: left;
+	padding: 10px;
+	color: white;
+	text-decoration: none;
+	outline: none;
+	font-size: 19px;
+	font-family: Comic Sans MS;
+	height:100%;
+	text-align: center;
+}
+
+
+.navbar a:hover { /* διαδραστικά κουμπιά */
+	transition-duration: 0.2s;
+	background-color: #4da6ff;
+}
+
+.navbar a.active { /* κουμπί ενεργής σελίδας */
+	background-color: #00cca3;
+}
+
+@media screen and (max-width: 500px) { /* responsivness για παράθυρα με width 500px και κάτω */
+	.navbar a, .topnav-right {
+		float: none; /*θα εμφανιστεί εκεί που θα πρέπει να είναι */
+		display: block; /* ξεκινάει σε καινούργια σειρά και παίρνει όλο το width */
+		width: 100%;
+		text-align: center;
+	}
+  
+}
+
+p {
+	color: white;
+	font-family: Comic Sans MS;
+	font-size: 25px;
+	padding: 10px;
+}
+
+ol {
+	color: white;
+	font-family: Comic Sans MS;
+	font-size: 25px;
+}

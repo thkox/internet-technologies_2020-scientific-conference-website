@@ -1,0 +1,53 @@
+<!Doctype html> 
+<html lang="el">
+	<head>
+		<meta charset="utf-8">
+		<title>Σύνδεση</title>
+		<meta name="decription" content="Σύνδεση σε ήδη εγγεγραμμένα μέλη">
+		<link rel="stylesheet" type="text/css" href="0_stylepages.css">
+		<link rel="stylesheet" type="text/css" href="6_login.css">
+	</head>
+	<body>
+		
+		<div class="navbar">
+			<img class="logomenu" src="0.4_logomenu.jpg" alt="Logo συνεδρίου">
+			<a href="5_aboutus.html">About Us</a>
+			<a href="2_organizers.html">Μέλη</a>
+			<a href="3_calendar.html">Πρόγραμμα</a>
+			<a href="4_location.html">Τόπος διεξαγωγής</a>
+		  
+			<div class="topnav-right">
+				<a class="active" href="#login">Σύνδεση</a>
+				<a href="7_signup.html">Εγγραφή</a>
+				<img class="flag" src="0.3_flag.png" alt="Έχετε εισαχθεί στην ελληνική σελίδα του συνεδρίου" title="Έχετε εισαχθεί στην ελληνική σελίδα του συνεδρίου">
+			</div>
+		</div>
+		
+		<br><br>
+
+	<div class="info">
+		<form action="6_login.php" method="post">
+			<table>
+				<tr>
+					<th colspan="2" class="header">Σύνδεση</th>
+				</tr>
+				<tr>
+					<td class="first"><label for="username">Username:</label></td>
+					<td class="second"><input placeholder="Εισάγεται το username σας" type="text" pattern="[A-Za-z]{6,8}" id="username" maxlength="8" name="username" size="25" required></td>
+				</tr>
+				<tr>
+					<td class="first"><label for="userpassword">Password:</label></td>
+					<td class="second"><input type="password" pattern="[A-Za-z]{6,8}" id="userpassword" name="userpassword" size="25" maxlength="8" placeholder="Εισάγεται ένα κωδικό 6 - 8 char." required></td>
+				</tr>
+				<tr class="footer">
+					<input type="hidden" name="con" id="con" value="0">
+					<td colspan="2">
+					<input id="submit" name="submit" type="submit" value="Log In">
+					<input id="cancel" name="cancel" type="reset" value="Reset"></td>
+				</tr>
+			</table>
+		</form>
+		<p> Συνδεθείτε για να δείτε το πρόγραμμα του συνεδρίου μας!</p>
+		</div>
+	</body>
+</html>

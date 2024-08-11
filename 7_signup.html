@@ -1,0 +1,86 @@
+<!Doctype html> 
+<html lang="el">
+	<head>
+		<meta charset="utf-8">
+		<title>Φόρμα Εγγραφής</title>
+		<meta name="decription" content="Φόρμα εγγραφής στη σελίδα αν δεν είστε ήδη εγγεγραμμένα μέλη στο συνέδριο.">
+		<link rel="stylesheet" type="text/css" href="0_stylepages.css">
+		<link rel="stylesheet" type="text/css" href="7_signup.css">
+	</head>
+	<body>
+		
+		<div class="navbar">
+			<img class="logomenu" src="0.4_logomenu.jpg" alt="Logo συνεδρίου">
+			<a href="5_aboutus.html">About Us</a>
+			<a href="2_organizers.html">Μέλη</a>
+			<a href="3_calendar.html">Πρόγραμμα</a>
+			<a href="4_location.html">Τόπος διεξαγωγής</a>
+		  
+			<div class="topnav-right">
+				<a href="6_login.html">Σύνδεση</a>
+				<a class="active" href="7_signup.html">Εγγραφή</a>
+				<img class="flag" src="0.3_flag.png" alt="Έχετε εισαχθεί στην ελληνική σελίδα του συνεδρίου" title="Έχετε εισαχθεί στην ελληνική σελίδα του συνεδρίου">
+			</div>
+		</div>
+		
+		<br><br>
+
+	<div class="info">
+		<form action="7_signup2.php" method="post" id="signup">
+			<table>
+				<tr>
+					<th colspan="2" class="header">Φόρμα Εγγραφής</th>
+				</tr>
+				<tr>
+					<td class="first"><label for="firstname">Όνομα:</label></td>
+					<td class="second"><input placeholder="Εισάγεται το ονομά σας" type="text" pattern="^[Α-Ωα-ωά-ώA-Za-z]*$" id="firstname" name="firstname" size="25" required></td>
+				</tr>
+				<tr>
+			<!-- pattern="" Εδώ μέσα βάζεις τι χαρακτήρες θέλεις να δέχεται το input text όταν πατάς submit -->
+					<td class="first"><label for="lastname">Επώνυμο:</label></td>
+					<td class="second"><input type="text" pattern="^[Α-Ωα-ωά-ώA-Za-z]*$" id="lastname" name="lastname" placeholder="Εισάγεται το επωνυμό σας" size="25" required></td>
+				</tr>
+				<tr>
+					<td class="first"><label for="Mr">Προσφώνηση:</label></td>
+					<td class="second">
+						<input type="radio" id="Mr" name="address" value="Mr"><label>Mr</label>
+						<input type="radio" id="Mrs" name="address" value="Mrs"><label>Mrs</label></td>
+				</tr>
+				<tr>
+					<td class="first"><label for="email">E-mail:</label></td>
+					<td class="second"><input type="email" id="email" name="email" placeholder="Εισάγεται E-mail" size="25" required></td>
+				</tr>
+				<tr>
+					<td class="first"><label for="telephone">Τηλέφωνο:</label></td>
+			<!-- Στο w3schols είδα και το type="tel" για το τηλέφωνο, αλλά δεχόταν και χαρακτήρες πέρα από νούμερα...μάλλον θα πρέπει να χρησιμοποιήσω και javascript για να παίξει -->
+					<td class="second"><input type="text" pattern="[0-9]{10}" maxlength="10" id="telephone" name="telephone" placeholder="Εισάγεται τηλέφωνο" size="25" required></td>
+			<!-- Το maxlength="10" το έβαλες γιατί ο χρήστης που συμπληρώνει αυτή την φόρμα κατοικεί στην Ελλάδα.-->
+				</tr>
+				<tr>
+					<td class="first"><label for="username">Username:</label></td>
+					<td class="second"><input placeholder="Εισάγεται το username σας" type="text" pattern="[A-Za-z]{6,8}" id="username" name="username" size="25" required></td>
+				</tr>
+				<tr>
+					<td class="first"><label for="userpassword">Password:</label></td>
+					<td class="second"><input type="password" pattern="[A-Za-z]{6,8}" id="userpassword" name="userpassword" size="25" maxlength="8" placeholder="Εισάγεται ένα κωδικό 6 - 8 char." required></td>
+				</tr>
+				<tr>
+					<td class="first"><label for="userpasswordrepeat">Confirm Password:</label></td>
+					<td class="second"><input type="password" pattern="[A-Za-z]{6,8}" id="userpasswordrepeat" name="userpasswordrepeat" size="25" maxlength="8" placeholder="Επιβεβαίωση κωδικού" required></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="second"><input type="checkbox" id="newsletter" name="newsletter" value="Yes">
+					<label for="newsletter">Συμφωνώ να λαμβάνω ενημερωτικά email</label></td>
+				</tr>
+				<tr class="footer">
+					<td colspan="2">
+					<input id="submit" name="submit" type="submit" value="Signup">
+					<input id="cancel" name="cancel" type="reset" value="Clear"></td>
+				</tr>
+			</table>
+		</form>
+		<p>Με την εγγραφή σας θα μπορείτε να δείτε το πρόγραμμα του συνεδρίου</p>
+		</div>
+	</body>
+</html>

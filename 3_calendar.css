@@ -1,0 +1,38 @@
+.info {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h2{
+	font-size: 250%;
+	text-align: left;
+	color: white;
+}
+
+/*https://www.w3schools.com/howto/howto_js_accordion.asp */
+.accordion {
+	background-color: #66b3ff;
+	color: white;
+	padding: 30px;
+	width: 100%;
+	text-align: left;
+	outline: none;
+	border: none;
+	transition: 0.6s;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.active, .accordion:hover {
+	background-color: #3399ff;
+}
+
+/* Δεν υπάρχει από την αρχή */
+.panel {
+	padding: 0 18px; /*ενεργοποιείται η δεύτερη επιλογή όταν πρέπει*/
+	background-color: #b3d9ff;
+	display: none;
+	overflow: auto;
+	border-radius: 0px 0px 20px 20px;
+}

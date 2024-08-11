@@ -1,0 +1,30 @@
+.info{
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	
+figure{
+	text-align: center;
+	font-size: 150%;
+	width: 80%
+}
+
+img.google{
+	width: 50%;
+}
+
+img.siri{
+	width: 50%;
+}
+
+div.memos{ /* θέτω ως πλαίσιο τα δύο figures */
+	width: 100%;
+	overflow: auto;
+}
+
+div.memos > div { /* επηρεάζει τις δύο φωτογραφίες */
+	float: left;
+	width: 50%
+	
+}

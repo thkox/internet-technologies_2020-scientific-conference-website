@@ -1,0 +1,61 @@
+.info{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+/* 340x462 max για να μην χαλάσει το μέγεθος των φωτογραφιών */
+.person {
+	width: 300px;
+	border-radius: 20px;
+}
+
+figure{
+	text-align: center;
+	font-size: 180%;
+	width: 80%;
+}
+
+div.lineup1 {
+	width: 100%;
+	overflow: auto;
+}
+
+div.lineup1 > div { /* επηρεάζει τα figure */
+	float: left;
+	width: 33.33333%;
+}
+
+div.lineup2 {
+	width: 100%;
+	overflow: auto;
+}
+
+div.lineup2 > div { /* επηρεάζει τα figure */
+	float: left;
+	width: 33.33333%;
+}
+
+div.lineup3 {
+	width: 100%;
+	overflow: auto;
+}
+
+div.lineup3 > div { /* επηρεάζει τα figure */
+	float: center;
+	width: 34%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media screen and (max-width: 1100px) { /* responsivness για παράθυρα με width 1100px και κάτω */
+	div.lineup1 > div, div.lineup2 > div, div.lineup3 > div {
+		float: none;
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+p {
+	text-align: center;
+}

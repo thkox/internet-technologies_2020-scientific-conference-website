@@ -1,0 +1,55 @@
+.flag{
+	float: right;
+}
+
+figure{
+	color:white;
+	text-align: center;
+	font-size: 200%;
+	font-family: Bahnschrift;
+}
+
+img.mainimage {
+	display: block; /* το display δηλώνει πως θα φαίνεται το στοιχείο στην σελίδα */
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+	border-radius: 30px;
+	transition: transform 0.3s; /* εκτέλεσε το animation σε 0.3second */
+}
+
+.mainimage:hover { /* όταν βρεθεί ο κέρσορας επάνω */
+	transform: scale(1.1); /* μεγάλωσε 1.5 φορές */
+}
+
+table{
+	border-collapse: collapse; /*ενώνει τα όρια του table border και του cell border*/
+	empty-cells: hide;
+	margin-left:auto; 
+	margin-right:auto;
+	text-align:center;
+}
+
+button {
+	color: white;
+	background-color: #00ace6;
+	padding: 30px 50px; /* y, x */
+	text-align: center;
+	font-size: 150%;
+	font-family: Comic Sans MS;
+	border-radius: 20px;
+}
+
+button.login {
+	background-color: #33ccff;
+}
+
+button.signup{
+	background-color: #66d9ff;
+}
+
+button:hover {
+	background-color: #00cca3;
+	color: white;
+	transition-duration: 0.2s;
+}
