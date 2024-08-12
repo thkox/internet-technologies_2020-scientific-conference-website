@@ -21,13 +21,19 @@ This project is a web-based application developed for the final assignment of th
 
 The homepage features a dynamic menu that allows navigation between different sections of the website. Hovering over a specific image on the homepage causes a zoom-in effect, enhancing the user experience.
 
+![Alt text](./images/homepage.png)
+
 ### Registration Form
 
 The registration page includes a form with validation checks to ensure accurate user input.
 
+![Alt text](./images/registration.png)
+
 ### Conference Schedule Access
 
 Users can view the conference schedule only after logging in. Unauthenticated users attempting to access the schedule are redirected to the login page if no session exists.
+
+![Alt text](./images/conference_schedule_access.png)
 
 ## Setup Instructions
 
