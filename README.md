@@ -5,8 +5,8 @@
 This project is a web-based application developed for the final assignment of the "Internet Technologies" course, offered in the 1st semester of the 2020 academic year at the University of Piraeus, Department of Informatics. The goal was to create a fully functional website for a scientific conference. The website includes a variety of pages, such as a homepage, information about the conference, a tourist guide, a registration form, and a login system. The project emphasizes user interactivity, proper form validation, database integration, and responsive design, making it a comprehensive example of a real-world web application.
 
 ## Course Information
-- **Institution:** University of Piraeus
-- **Department:** Department of Informatics
+- **Institution:** [University of Piraeus](https://www.unipi.gr/en/)
+- **Department:** [Department of Informatics](https://cs.unipi.gr/en/)
 - **Course:** Internet Technologies (2020)
 - **Semester:** 1st
 
